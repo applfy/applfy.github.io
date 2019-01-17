@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="designsheets.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="home.html"><i class="fa fa-home"></i></a>
+    </div>
+
+    <div class="container">
+        <div class="imgblur">
+            <img class="theme-image" src="travel.jpg" alt="Photo of Mexican Beaches">
+            <div class="theme-image-text">
+                <h1>Travel</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="center">
+        <p class="text">
+            Welcome to Travel. Looking for some place to travel, yet can't find that right place? Using our random algorithm, we provide that service for you. Take a gamble and use our search button below to land on a completely random destination with information provided to help make your travelling experience easier. We take the research and hours of searching outside of your travelling experience.
+        </p>
+    </div>
+
+    <div class="center">
+        <ul class="text-benefits">
+                <li>Destination Information <i class="fas fa-check" style="color:rgb(139, 238, 57)"></i></li>
+                <li>Suggested Hotels <i class="fas fa-check" style="color:rgb(139, 238, 57)"></i></li>
+                <li>Sightseeing<i class="fas fa-check" style="color:rgb(139, 238, 57)"></i></li>
+                <li>Best Deals and Offers<i class="fas fa-check check" style="color:rgb(139, 238, 57)"></i></li>
+        </ul>
+    </div>
+
+    <div class="center">
+        <button onclick="randomPage(5)" class="random-button"><i class="fa fa-search"></i></button>
+    </div>
+
+    <script>
+        function randomPage(pages) {
+          let linkList = ["toronto.html", "cancun.html", "havana.html", "rome.html", "paris.html"];
+          let randomIndex = Math.floor(Math.random() * Math.floor(5));
+          location.assign(linkList[randomIndex]);
+        }
+    </script>
+
+    <div class="bottom">
+                
+    </div>
+
+</body>
+</html>
+

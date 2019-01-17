@@ -1,0 +1,251 @@
+.body {
+    background-color: rgb(85, 85, 85)
+}
+
+.navbar {
+    background-color: rgb(85, 85, 85);
+    width: 100%;
+    overflow: auto;
+}
+
+.navbar a {
+    float: left;
+    text-align: center;
+    width: 10%;
+    padding: 12px 5px;
+    font-size: 35px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: rgb(0,0,0);
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.theme-image {
+    width: 100%;
+    height: 20%;
+    border-bottom: 10px solid rgb(85, 85, 85);
+    height: 500px;
+}
+
+.theme-image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.random-button {
+    background-color: rgb(85, 85, 85);
+    border: none;
+    color: white;
+    padding: 20px 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.random-button:hover {
+    background-color: rgb(0,0,0);
+    cursor: pointer;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+  .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .text {
+      text-align: center;
+      color: white;
+      background-color: rgb(85, 85, 85);
+      padding: 30px;
+      margin: 3% 20% 1% 20%;
+      border: none;
+      border-radius: 10px;
+      display: inline-block;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 20px;
+  }
+
+  .text-benefits {
+      text-align: left;
+      text-decoration: none;
+      border-left: 10px solid rgb(139, 238, 57);
+      background-color: rgb(211, 252, 177);
+      padding: 30px 30% 30px 30px;
+      margin: 1% 20% 2% 20%;
+      display: inline-block;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 20px;
+      list-style: none;
+  }
+
+  @media only screen and (max-width: 700px) {
+  .text {margin: 5% 1% 5% 1%}
+  .text-benefits {margin: 5% 1% 5% 1%}
+  .theme-image {height: 300px}
+  .offer-card {margin: 5% 1% 5% 1%}
+  }
+
+  .imgblur {
+    -webkit-animation-name: blur;
+    -webkit-animation-duration: 4s;
+    animation-name: blur;
+    animation-duration: 4s;
+  }
+
+  .hotel-card-image {
+    height: 200px;
+    width: 300px;
+    float: left;
+    border-radius: 10px;
+    padding-right: 30px;
+  }
+
+  .hotel-card {
+    background-color: rgb(85, 85, 85);
+    border-radius: 10px;
+    height: 200px;
+    margin: 3% 10% 1% 10%;
+  }
+
+  .hotel-card-text {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 1.4vw;
+    color: white;
+    padding-top: 30px;
+    padding-right: 30px;
+  }
+
+  .offer-card-exp {
+    text-align: center;
+    text-decoration: none;
+    border-left: 10px solid rgb(235, 238, 57);
+    background-color: rgb(252, 241, 177);
+    padding: 30px 30% 30px 30%;
+    margin: 7% 5% 0% 5%;
+    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 20px;
+    list-style: none;
+    font-weight: bold;
+  }
+
+  .offer-card-wj {
+    text-align: center;
+    text-decoration: none;
+    border-left: 10px solid rgb(57, 181, 238);
+    background-color: rgb(177, 252, 248);
+    padding: 30px 30% 30px 30%;
+    margin: 0% 5% 0% 5%;
+    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 20px;
+    list-style: none;
+    font-weight: bold;
+  }
+
+  .offer-card-ac {
+    text-align: center;
+    text-decoration: none;
+    border-left: 10px solid rgb(238, 57, 57);
+    background-color: rgb(252, 177, 177);
+    padding: 30px 30% 30px 30%;
+    margin: 0% 5% 2% 5%;
+    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 20px;
+    list-style: none;
+    font-weight: bold;
+  }
+
+  .button {
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 20px 5px 5px 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  a.button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .wj-button {
+      background-color: rgb(57, 181, 238);
+  }
+
+  .ac-button {
+      background-color: rgb(238, 57, 57);
+  }
+
+  .exp-button {
+      background-color: rgb(235, 238, 57);
+  }
+
+@-webkit-keyframes blur {
+      from {filter: blur(5px)}
+      to {filter: blur(0px)}
+  }
+
+@keyframes blur {
+    from {filter: blur(10px)}
+    to {filter: blur(0px)}
+}
