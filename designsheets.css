@@ -110,18 +110,11 @@
       list-style: none;
   }
 
-  @media only screen and (max-width: 700px) {
-  .text {margin: 5% 1% 5% 1%}
-  .text-benefits {margin: 5% 1% 5% 1%}
-  .theme-image {height: 300px}
-  .offer-card {margin: 5% 1% 5% 1%}
-  }
-
   .imgblur {
     -webkit-animation-name: blur;
-    -webkit-animation-duration: 4s;
+    -webkit-animation-duration: 2s;
     animation-name: blur;
-    animation-duration: 4s;
+    animation-duration: 2s;
   }
 
   .hotel-card-image {
@@ -137,56 +130,47 @@
     border-radius: 10px;
     height: 200px;
     margin: 3% 10% 1% 10%;
+    transition: all 0.3s ease;
+  }
+
+  .hotel-card:hover {
+      transform: scale(1.02);
   }
 
   .hotel-card-text {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 1.4vw;
     color: white;
-    padding-top: 30px;
+    padding-top: 20px;
     padding-right: 30px;
   }
 
-  .offer-card-exp {
+  .offer-card {
     text-align: center;
     text-decoration: none;
-    border-left: 10px solid rgb(235, 238, 57);
-    background-color: rgb(252, 241, 177);
-    padding: 30px 30% 30px 30%;
-    margin: 7% 5% 0% 5%;
-    display: inline-block;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 20px;
-    list-style: none;
-    font-weight: bold;
-  }
-
-  .offer-card-wj {
-    text-align: center;
-    text-decoration: none;
-    border-left: 10px solid rgb(57, 181, 238);
-    background-color: rgb(177, 252, 248);
-    padding: 30px 30% 30px 30%;
+    padding: 30px 30px 30px 30px;
     margin: 0% 5% 0% 5%;
-    display: inline-block;
+    width: 100%;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 20px;
     list-style: none;
     font-weight: bold;
   }
 
-  .offer-card-ac {
-    text-align: center;
-    text-decoration: none;
+  .ac {
     border-left: 10px solid rgb(238, 57, 57);
     background-color: rgb(252, 177, 177);
-    padding: 30px 30% 30px 30%;
-    margin: 0% 5% 2% 5%;
-    display: inline-block;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 20px;
-    list-style: none;
-    font-weight: bold;
+  }
+
+  .wj {
+    border-left: 10px solid rgb(57, 181, 238);
+    background-color: rgb(177, 252, 248);
+  }
+
+  .exp {
+    border-left: 10px solid rgb(235, 238, 57);
+    background-color: rgb(252, 241, 177);
+    margin: 7% 5% 0 5%;
   }
 
   .button {
@@ -240,12 +224,44 @@
       background-color: rgb(235, 238, 57);
   }
 
+  .bottom {
+      width: 100%;
+      height: 50px;
+      background-color: rgb(85, 85, 85);
+      margin-top: 50px;
+  }
+
 @-webkit-keyframes blur {
       from {filter: blur(5px)}
       to {filter: blur(0px)}
   }
 
 @keyframes blur {
-    from {filter: blur(10px)}
+    from {filter: blur(5px)}
     to {filter: blur(0px)}
 }
+
+@media only screen and (max-width: 700px) {
+    .text {margin: 5% 1% 5% 1%}
+    .text-benefits {margin: 5% 1% 10% 1%}
+    .theme-image {height: 300px}
+    .offer-card {margin: 0}
+    .exp {margin: 15% 0% 0% 0%;}
+    .hotel-card {
+        height: auto;
+        max-width: 400px;
+        margin: auto;
+        text-align: center;
+        margin-top: 5%;
+        padding-bottom: 10px;
+    }
+    .hotel-card-text {
+        padding-left: 30px;
+        font-size: 20px;
+    }
+    .hotel-card-image {
+        width: 400px;
+        padding-bottom: 20px;
+        border-radius: 10px;
+    }
+    }
